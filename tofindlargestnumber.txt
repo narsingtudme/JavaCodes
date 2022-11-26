@@ -1,0 +1,24 @@
+//Write a program to find the largest of 'n' numbers from taken
+package Package1;
+import java.util.*;
+public class tofindLargestNumber {
+		public static void main(String[] args) {
+		int n,i,large;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter no of Element");
+		n=sc.nextInt();
+		int a[]=new int[n];
+		for(i=0;i<=n-1;i++)
+		{
+			System.out.println("Enter a no");
+			a[i]= sc.nextInt();
+		}
+		large=a[0];
+		for(i=0;i<=n-1;i++)
+		        {
+		        	if(large<a[i])
+		        		large=a[i];
+		        }
+		        System.out.println("Largest no="+large);
+				}
+}
